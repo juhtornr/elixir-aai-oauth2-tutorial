@@ -1,9 +1,15 @@
 <html>
 	<head>
 		<title>Elixir AAI OAuth2 tutorial</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<h2>Welcome to Elixir AAI OAuth2 tutorial</h2>
+		<script>
+		$.ajax({url: '/user'}).done(function( data ) {
+			$('body').append('Authenticated: ' + data.authenticated);
+		});
+		</script>
 	</body>
 </html>
 
