@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableOAuth2Sso
 @RestController
-public class UiApplication extends WebSecurityConfigurerAdapter {
+public class ElixirAAIApplication extends WebSecurityConfigurerAdapter {
 
   	@RequestMapping("/user")
   	public Principal user(Principal principal) {
@@ -20,7 +20,7 @@ public class UiApplication extends WebSecurityConfigurerAdapter {
    	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(UiApplication.class, args);
+		SpringApplication.run(ElixirAAIApplication.class, args);
 	}
 
   	@Override
