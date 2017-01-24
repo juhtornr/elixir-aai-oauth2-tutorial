@@ -5,8 +5,10 @@
 	</head>
 	<body>
 		<h2>Welcome to Elixir AAI OAuth2 tutorial</h2>
+		<a href="/login"><img src="/login-button.png"/></a>
 		<script>
 		$.ajax({url: '/user'}).done(function( data ) {
+			$('img').hide();
 			$('body').append('Authenticated: ' + data.authenticated);
 		});
 		</script>
