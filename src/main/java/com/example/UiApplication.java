@@ -7,9 +7,11 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableOAuth2Sso
+@RestController
 public class UiApplication extends WebSecurityConfigurerAdapter {
 
   	@RequestMapping("/user")
