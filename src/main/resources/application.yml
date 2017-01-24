@@ -1,0 +1,12 @@
+security:
+  oauth2:
+    client:
+      clientId: x  
+      clientSecret: x
+      accessTokenUri: https://perun.elixir-czech.cz/oidc/token
+      userAuthorizationUri: https://perun.elixir-czech.cz/oidc/authorize
+      tokenName: oauth_token
+      scope: openid 
+    resource:
+      userInfoUri: https://perun.elixir-czech.cz/oauth/rpc/json/oidcManager/userinfo
+
