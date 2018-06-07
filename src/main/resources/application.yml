@@ -3,10 +3,10 @@ security:
     client:
       clientId: x  
       clientSecret: x
-      accessTokenUri: https://perun.elixir-czech.cz/oidc/token
-      userAuthorizationUri: https://perun.elixir-czech.cz/oidc/authorize
+      accessTokenUri: https://login.elixir-czech.org/oidc/token
+      userAuthorizationUri: https://login.elixir-czech.org/oidc/authorize
       tokenName: oauth_token
-      scope: openid 
+      scope: openid, bona_fide_status 
     resource:
-      userInfoUri: https://perun.elixir-czech.cz/oauth/rpc/json/oidcManager/userinfo
+      userInfoUri: https://login.elixir-czech.org/oidc/userinfo
 
